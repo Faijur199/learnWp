@@ -1,82 +1,74 @@
 <?php get_header(); ?>
-<main class="flex-grow">
-<div class="@container py-16 sm:py-24">
-<div class="flex flex-col gap-10 @[864px]:flex-row @[864px]:items-center">
-<div class="flex flex-col gap-6 @[864px]:justify-center flex-1">
-<div class="flex flex-col gap-4 text-left">
-<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl"> Digital Product Designer </h1>
-<h2 class="text-base font-normal leading-normal text-subtle-text-light dark:text-subtle-text-dark"> I create intuitive and beautiful user experiences. Passionate about solving complex problems through clean code and user-centric design. </h2>
+<main class="flex flex-col gap-12 pt-8">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[480px]" data-alt="Abstract hero image for the Acme Corp redesign project, showing vibrant geometric shapes." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 35%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDX1XJhny7t0vWZD__1i6idmnHSGCd4uGupRGhCJ6XajcgKckI9kFiB1gvCHxntMP3k7VKmFIK-syDZRh22rh6ucpgMnJZ_1AGkhqQ4OX-ciydmeuvaxIXrcrzrgJ2epcsJp80kiizRo3sNCoPWY_dA9rVjc38AUzJRqg06TI_jQpO22k0xnVJ3Z52_Quv3vlvuh2i_QjAUlchA3hIPAFOlHHPiUg7u6zsbKGL9oiXnp1XtwqIpT4QB4Uue0xCYgM0kvNMev2Bd7xqB");'>
+<div class="flex p-8"><h1 class="text-white tracking-tight text-5xl font-bold leading-tight">Redesign for Acme Corp</h1></div>
 </div>
-<div class="flex">
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
-<span class="truncate">View My Work</span>
-</button>
+<div class="px-4">
+<p class="text-lg font-normal leading-relaxed text-center text-[#618389] dark:text-gray-400">A comprehensive UX overhaul and visual redesign for a leading enterprise SaaS platform, focusing on improving user workflow efficiency and modernizing the interface.</p>
 </div>
-</div>
-<div class="w-full flex-1 bg-center bg-no-repeat aspect-square bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full" data-alt="Abstract vibrant geometric shapes on a light background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEyYbIZHGLcWFlIRuu4QmF5JA-iMFIzu0j0n82pOCdIVAWcq8dLm_cvffVqBTTLrpO_oJnl_quBCjcG5ZRpJIxWuM8t4ZSZlsW633l7X36NsQEa8jKuiD-TuuSGxoGKoM8pHj9fTkd96TWtnj25-4M9oiFbyaX3Ctt3K2Z4FwbPGncHitZQ2jFw4a7ss_2CUiImlL3cnlEYwZhsP2GX_uBf9X6iFQj2Rxi6vGihkt8GeFnbgkyWvvX85N8lUrSiz7PDsai-SIT8QKf");'></div>
-</div>
-</div>
-<section class="py-16 sm:py-24">
-<div class="flex flex-col gap-8 border border-gray-200 dark:border-gray-800 rounded-xl p-8">
+<div class="border rounded-xl bg-white dark:bg-background-dark dark:border-gray-700">
+<div class="p-8">
 <div class="flex items-center justify-between">
-<h2 class="text-3xl font-bold tracking-[-0.02em]">Recent Blog Posts</h2>
+<div class="flex gap-3 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+<p class="text-primary text-sm font-medium leading-normal">UX Design</p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+<p class="text-primary text-sm font-medium leading-normal">Figma</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+<p class="text-primary text-sm font-medium leading-normal">Webflow</p>
+</div>
+</div>
+<a class="flex h-12 items-center justify-center gap-x-2 rounded-lg bg-primary px-6 text-white text-base font-semibold leading-normal hover:bg-primary/90" href="#">
+<span>View Live Site</span>
+<span class="material-symbols-outlined text-xl">arrow_outward</span>
+</a>
+</div>
+<div class="mt-8 grid grid-cols-3">
+<div class="flex flex-col gap-1 py-4 pr-2">
+<p class="text-[#618389] dark:text-gray-400 text-sm font-normal leading-normal">Client</p>
+<p class="dark:text-white text-sm font-normal leading-normal">Acme Corp</p>
+</div>
+<div class="flex flex-col gap-1 py-4 px-2">
+<p class="text-[#618389] dark:text-gray-400 text-sm font-normal leading-normal">Role</p>
+<p class="dark:text-white text-sm font-normal leading-normal">Lead Designer</p>
+</div>
+<div class="flex flex-col gap-1 py-4 pl-2">
+<p class="text-[#618389] dark:text-gray-400 text-sm font-normal leading-normal">Year</p>
+<p class="dark:text-white text-sm font-normal leading-normal">2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-10 px-4">
 <div class="flex flex-col gap-4">
-<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">June 1, 2024</p>
-<h3 class="text-xl font-bold">The Future of UI/UX Design</h3>
-<p class="text-subtle-text-light dark:text-subtle-text-dark">Exploring upcoming trends and technologies that will shape user interfaces.</p>
-<a class="font-bold text-primary hover:underline" href="#">Read More</a>
+<h3 class="text-2xl font-bold tracking-tight dark:text-white">The Challenge</h3>
+<p class="text-base font-normal leading-relaxed text-[#618389] dark:text-gray-400">The existing platform, while powerful, suffered from an outdated user interface and a convoluted user experience. Key user workflows were inefficient, leading to increased training time for new customers and frequent support requests. The primary challenge was to redesign the entire application to be more intuitive, visually appealing, and aligned with modern SaaS standards, without disrupting the core functionality that existing users relied on.</p>
 </div>
 <div class="flex flex-col gap-4">
-<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">May 15, 2024</p>
-<h3 class="text-xl font-bold">A Guide to User-Centered Design</h3>
-<p class="text-subtle-text-light dark:text-subtle-text-dark">Practical steps to ensure your users are at the heart of your product.</p>
-<a class="font-bold text-primary hover:underline" href="#">Read More</a>
+<h3 class="text-2xl font-bold tracking-tight dark:text-white">The Process</h3>
+<p class="text-base font-normal leading-relaxed text-[#618389] dark:text-gray-400">Our process began with extensive user research, including interviews and usability testing of the existing platform. This allowed us to identify key pain points and areas for improvement. We then moved into wireframing and prototyping in Figma, creating low-fidelity and high-fidelity mockups for stakeholder review and user feedback. Iterative design cycles based on this feedback were crucial to refining the final solution.</p>
 </div>
+<img alt="A designer's desk with a laptop showing UI designs, a tablet, and a notebook." class="w-full rounded-xl" data-alt="A designer's desk with a laptop showing UI designs, a tablet, and a notebook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd3r6ZmfVuPJN4ZQ9zZbCjXBUHsnoEsUG304oV-mR_Cb7FMAyU3-gRCa3IrVKXkc7b4HPjVwnFnWUT0yPlaMJd9Es3ITMaOn72pr7CzTpOf5Ue9RNTHt1_iZChWemCONhSgpDI2E5FrY0svi6GoRG3mPuq0-fl94c3NhHQ8obie7rkTRIRFTwPsiz16y2kjhWPDLddKWkeZc8PlLJ43u-8xXMKr_C2zIPCCH6vlJbR3sBzpo4OzkI5U4SjtCUyso32nLM7i1Bi_9rj"/>
 <div class="flex flex-col gap-4">
-<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">April 28, 2024</p>
-<h3 class="text-xl font-bold">Minimalism in Web Design</h3>
-<p class="text-subtle-text-light dark:text-subtle-text-dark">How 'less is more' can lead to more effective and beautiful websites.</p>
-<a class="font-bold text-primary hover:underline" href="#">Read More</a>
+<h3 class="text-2xl font-bold tracking-tight dark:text-white">The Solution</h3>
+<p class="text-base font-normal leading-relaxed text-[#618389] dark:text-gray-400">The final product is a clean, modern, and highly intuitive user interface. We introduced a new design system with a consistent visual language, simplified navigation, and streamlined key workflows. The result was a 40% reduction in time-on-task for critical user journeys and a significant increase in user satisfaction scores. The redesigned platform is not only more efficient but also more enjoyable to use, helping Acme Corp improve customer retention and attract new clients.</p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<img alt="Close up of a mobile app user interface design on a screen." class="w-full rounded-xl" data-alt="Close up of a mobile app user interface design on a screen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1ipyA-2sURqsDF_dEfbsPGEJUKoomg_oL08094Rzdhnmu4Hm0y-yTBbRdfRXFF31gkdyGaX5ahTcWVZUZWEPFpLmWvIF1U-KN5112ix7gjTJuyW8u_Nda3eDPQnRCcxxzqg5N6Q6QDYZ86WoJnktDF36VUlE_bCDuYf3GUYN8-u1ObGv-Qy7OHgaBszfxDvvJAPGoZf4AX9mAG_-DKZ3wnQFlMgdmHiYY4QaQF0CPF51UMIPhC8Xhou6Zm-muSSCTfi1caZTz6hiE"/>
+<img alt="Person working on a laptop with code on the screen, sitting next to a coffee cup." class="w-full rounded-xl" data-alt="Person working on a laptop with code on the screen, sitting next to a coffee cup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpuI2fjByW4mEDUcpMZIw3PwB9gBLfGegCQyOBFjfQm7nxcNEdqiatmyaIv7wKYaGO4wWpFGrup1qTAO6C3uUE7m1wOMbHUI6-oFpLY9YcmcZn_kHYoO4a8vEFBn0eUIAY-07dMbDQlTHHvFLqPNQfLzXTdVxL2ekMwSBIAVCrtj_vnTX32Yuys7HR3qleV50t9KQ6EKnCcgvpS2S3gLJ4uRuP50gPypQfphO-AvlEETU0aa6rw24WqVCKexSi0CI7vCV8GdvTkoYa"/>
 </div>
 </div>
-<div class="flex justify-center mt-4">
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-transparent border border-primary text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary hover:text-text-light transition-colors">
-<span class="truncate">View More</span>
-</button>
+<div class="flex items-center justify-between border-t border-solid border-t-[#dbe4e6] dark:border-gray-700 mt-12 pt-8 px-4">
+<a class="flex items-center gap-2 text-sm font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="#">
+<span class="material-symbols-outlined">arrow_back</span>
+<span>Previous Project</span>
+</a>
+<a class="flex items-center gap-2 text-sm font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="#">
+<span>Next Project</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
 </div>
-</div>
-</section>
-<section class="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
-<div class="flex flex-col gap-8">
-<h2 class="text-3xl font-bold text-center tracking-[-0.02em]">Featured Projects</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-<div class="flex flex-col gap-4">
-<div class="w-full aspect-[4/3] bg-cover bg-center rounded-lg" data-alt="A clean dashboard user interface design." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFmotvC11kJezCgDpPq7ewuGiFBBqNw-Slp1tWLGaNmYhkOozuILhzj031AJUltcHw8y-NVGlhKrUM9kEIqgsH1fk0obORFlDmTYGZY6xTPkwAHepESjZvCBHKpJmX6aEXB_l2eQPrZhlhXjrO58A_OPTZHoDRompd-oUYdlOi023norT3HYSI048z8vj4HHIBfy5UY2qrBYSKxYXXQV5FP2g1dtqlset_MtYbZY30-28dg_ROS4BKLtBBuM3JBRZ0gh25oXlu0u_Q");'></div>
-<h3 class="text-xl font-bold">Project Dashboard UI</h3>
-<p class="text-subtle-text-light dark:text-subtle-text-dark">A sleek and modern dashboard design for a project management application.</p>
-</div>
-<div class="flex flex-col gap-4">
-<div class="w-full aspect-[4/3] bg-cover bg-center rounded-lg" data-alt="A mobile application mockup for a fitness app." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAML4GlxYLkua2YCiWdF8_8YjcJ6t0JptXLhb-8b2cFJ-YtMa443poAlhpiVvDN8i6bmYU9f6QvAcP-aI3XTE96mmx7fljo7bsZCVZ4LNASOsw4YMTxrUnkXvrsJfx6VGQM6lLU28Emm49S9mbE1Nrtcd9cyF9-Mbs1Gi9M6iG9OyxW8ruR0n0h3SLDnalcVnsRBGScRocnWSuiuYGV3LzAXev9WKrUNgr3fV9K-av0DD03byMxQ7gw_cGYfTp3gzc6HVIsxoW4LmuD");'></div>
-<h3 class="text-xl font-bold">Mobile Fitness App</h3>
-<p class="text-subtle-text-light dark:text-subtle-text-dark">A user-friendly mobile app to track fitness goals and daily activity.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
-<div class="flex flex-col gap-8">
-<h2 class="text-3xl font-bold text-center tracking-[-0.02em]">Photo Gallery</h2>
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-<div class="aspect-square bg-cover bg-center rounded-lg" data-alt="Minimalist architectural detail with strong shadows." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDijIe5ygPwJzkO2Gp42D1WkCJiCRW3gtqybJUH_NRuoXNNLZa6BNSmrL_uMndkL8vG7bVZw-Nf5RAovQPKjzbYc_8vbZ5GhgWR747lwF23Mbry6Ez6Xt09epU7wWSMvulOgAgG89Q7eimXkBjaTKVtbTi58M0WP4peWTCpVg-kEfZuITPXMm0-A9N9z-Gw9xMEDxqx6gQWV6gKT-rLFiWmjwwyU9pn-SwDU16sqP8BENdj1O_HiR-zt02NIpOlLK0DKN62zS4Wis0y");'></div>
-<div class="aspect-square bg-cover bg-center rounded-lg" data-alt="Abstract shot of colorful textures." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArVW7wy5341RV1PwaQ0bXxwRbILBSYCG4goYR_81Tc_EHLxRHp9dl1XgHhBhzpwAw0653IKUSRe5mWUwUyOB-yPqsxWWgRopxJUReISabkpUTnj36aLm3HK-2fo02ZivnBmbRjDvWK7VKEa6yKqx265bKwRnNI63bujMYI8q_t-rf6WV9k5rIs7HaUtU2CVu5VHVE_iQiQph4Tq5fd8-zThfuEahMblu4TnanKPLfYszDBbA6io7RjtmaH4MACTOFYXt1Th-6psmxe");'></div>
-<div class="aspect-square bg-cover bg-center rounded-lg" data-alt="A tranquil landscape with misty mountains." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGVyBtfZ7FOHHxILiED3sT6ztG2uK5vGSo0kYha1OkAx9QqEDaSUF8qE37wXrF5O4Egvzd1riCMfdHAt0YswP-V2PaxA9f13xlsCIqv-AM-OVKO1FdUrGG7B7PHXBWD3U1xYeOhQl4FrqsbKDKsG_7mGOtGDuNh8TaQAMi3CwaMBeJqEuAgMGoYoasCXNPc1akjq0zreu-msixhEY5Pqo8TRTKnS__bb0fdUQMSLRmLXMwNT0zQeGaVQlyiwjdycoanOAFKE-wvJEV");'></div>
-<div class="aspect-square bg-cover bg-center rounded-lg" data-alt="A vibrant street art mural on a brick wall." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2PphbHakon-w2KavAdSswoC_Gb-EI0qRg5bP-rnIEpKw73ZBJKVw7sTTo8cIlHDiVuGDJPpZIEq9eAvIOolbWBwpdna3pR6yyXY-kVnFw6F1oxySvMdaAw2AFpp3WPBnkbcR9GGFO57egD-zsxkFD7AO1HTiHJbPEGi2xCftTZuQsDIqr4TcbFNMJYyd47SXRK0DMuIXgVnUhT9vSaDx7PA8Q2X9iqcn2OB-CPWjCzDhJxX8K51xLxMpG6fpMDGKp3IoC-u6M0KSw");'></div>
-<div class="aspect-square bg-cover bg-center rounded-lg" data-alt="Close-up of a dew-covered leaf." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHaOuZIphLiAb6AymIaTc8tKdv-03PTV_Vac_OyDeABxpBCS_Z9mWCEPAxHCXRVfkxAdeqT2pDmUFkrb_AP_HAeZl5a3-lc06-bHcgq9rX9RXrUtEuoMeowgITHEEqeD9boUqe6ZQyyZQvhNYL0sWP6r0nXyHVsm_Hbc24_2aqhvnSxd1SgJPC77FZdTns_xAlbcupg86hO8ogi9BqHfRInaWfuvymDwpyZacSoyqlpyOrju3adDQEzMgiOB_28XlrnYYZxNFrVCvj");'></div>
-<div class="aspect-square bg-cover bg-center rounded-lg" data-alt="A bird's eye view of a winding coastal road." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy1dDkKx27KkVGw2ptO_x9aJOVlkXer8IkeDeMZJmVJdBvx0Ns1BJP56FQiO4Ey8hdsT1i8CTJbaSlSm14HCd0nmm6PCCXEHZkUlpm29_9RJe24GhwRtKAAqEVBXR23nGiYhAEKY0wLZmaAb_JkErbXqT8FbVZQDPxcKB6ke68luZycCZd7dLXwWBqX1QYzrFVAG72SfB5JKVw0aBUOzJn71WpnfjATJbd84CBAluwgrif_ulQTxpc-NGWEnrSEZHSvY4aoJ1YxinO");'></div>
-</div>
-</div>
-</section>
 </main>
 <?php get_footer(); ?>
