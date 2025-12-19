@@ -32,13 +32,13 @@
                 </div>
                 <!-- Images -->
                 <div class="w-full mb-8">
-                    <div class="w-full overflow-hidden bg-gray-200 dark:bg-gray-700 aspect-[16/9] rounded-lg">
-                        <div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Abstract colorful geometric shapes on a light background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIGavMNk5QFO5VGh799TBp__EVDhlqdh46y7uzopi2i2_6DxCy1eFfo2xwJ92raYNu4hPlLhlTkvdzx1uE0O8Yh9e_0G3jTkpAuq41d2wchFv1UIR5C3hwIwh4e_6JkQ4tHfi7Pq2xk5Wrf7w3b4HDEiICBIt4UbReZmcsfT3zpv5NLV7EhKiQXmcM6lVYDfloxt9-R-wa_S-p6c8wo4iDR2MCDD6a5p-3GDRUjzvF9aVtA9aR3NKGkk_QK-qsu2kprGV9jhCS4p7z");'></div>
-                    </div>
+                    
+                    <?php the_post_thumbnail('post-thumbnail', ['class' =>'w-full']); ?>
                 </div>
                 <!-- Blog Post Body -->
-                <div class="prose prose-lg dark:prose-invert max-w-none text-[#212529] dark:text-gray-200 text-base leading-relaxed space-y-6">
-                    <p>Minimalism isn't just an aesthetic; it's a principle. In web design, it's about conveying more by showing less. The goal is to strip away superfluous elements and focus on what's essential, creating a user experience that is both intuitive and beautiful. This approach prioritizes content, enhances readability, and improves site performance.</p>
+                <div class=" learnwp-content prose prose-lg dark:prose-invert max-w-none text-[#212529] dark:text-gray-200 text-base leading-relaxed space-y-6">
+                    <?php the_content(); ?>
+                    <!-- <p>Minimalism isn't just an aesthetic; it's a principle. In web design, it's about conveying more by showing less. The goal is to strip away superfluous elements and focus on what's essential, creating a user experience that is both intuitive and beautiful. This approach prioritizes content, enhances readability, and improves site performance.</p>
                     <h2 class="text-2xl font-bold pt-6 text-[#212529] dark:text-gray-100">The Core Principles</h2>
                     <p>At its heart, minimalist design is guided by a few key principles. First, "less is more." Every element on the page must serve a purpose. If it doesn't add value to the user's experience, it's noise. Second is the strategic use of white space, or negative space, which helps to guide the user's eye and create a sense of calm and order.</p>
                     <ul class="list-disc list-inside space-y-2 pl-2">
@@ -58,7 +58,8 @@
                         </div>
                     </div>
                     <p>Ultimately, minimalist design is about respecting the user's attention. By creating a clean, focused, and efficient interface, you not only improve usability but also build trust and communicate professionalism. It's an art form that balances aesthetics with function, proving that simplicity is the ultimate sophistication.</p>
-                </div>
+                -->
+                </div> 
             </article>
             <!-- Divider -->
             <hr class="my-12 border-gray-200 dark:border-gray-700" />
