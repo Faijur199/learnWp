@@ -751,6 +751,17 @@
     color: var(--color-gray-100);
   }
 }
+.learnwp-content h3 {
+  padding-top: calc(var(--spacing) * 6);
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: #212529;
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-gray-100);
+  }
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;

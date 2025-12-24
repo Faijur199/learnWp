@@ -92,20 +92,20 @@
     </section>
 
     <?php
-    $post_query = new WP_Query([
-        'post_type' => 'post',
-        'posts_per_page' => 3,
-    ]);
-    if ($post_query->have_posts()) {
-        while ($post_query->have_posts()) {
-            $post_query->the_post();
-            echo the_title();
-            echo the_content();
-        }
-    } else {
-        echo 'no post found';
-    }
-    wp_reset_postdata();
+    // $post_query = new WP_Query([
+    //     'post_type' => 'post',
+    //     'posts_per_page' => 3,
+    // ]);
+    // if ($post_query->have_posts()) {
+    //     while ($post_query->have_posts()) {
+    //         $post_query->the_post();
+    //         echo the_title();
+    //         echo the_content();
+    //     }
+    // } else {
+    //     echo 'no post found';
+    // }
+    // wp_reset_postdata();
     ?>
 
 </main>

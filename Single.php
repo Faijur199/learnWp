@@ -38,27 +38,7 @@
                 <!-- Blog Post Body -->
                 <div class=" learnwp-content prose prose-lg dark:prose-invert max-w-none text-[#212529] dark:text-gray-200 text-base leading-relaxed space-y-6">
                     <?php the_content(); ?>
-                    <!-- <p>Minimalism isn't just an aesthetic; it's a principle. In web design, it's about conveying more by showing less. The goal is to strip away superfluous elements and focus on what's essential, creating a user experience that is both intuitive and beautiful. This approach prioritizes content, enhances readability, and improves site performance.</p>
-                    <h2 class="text-2xl font-bold pt-6 text-[#212529] dark:text-gray-100">The Core Principles</h2>
-                    <p>At its heart, minimalist design is guided by a few key principles. First, "less is more." Every element on the page must serve a purpose. If it doesn't add value to the user's experience, it's noise. Second is the strategic use of white space, or negative space, which helps to guide the user's eye and create a sense of calm and order.</p>
-                    <ul class="list-disc list-inside space-y-2 pl-2">
-                        <li>Clarity and focus on content.</li>
-                        <li>Simple color palettes, often monochromatic or with a single accent color.</li>
-                        <li>Bold, clean typography to establish hierarchy.</li>
-                        <li>Intuitive navigation and user flow.</li>
-                    </ul>
-                    <blockquote class="border-l-4 border-primary pl-4 italic text-gray-600 dark:text-gray-400">
-                        "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." – Antoine de Saint-Exupéry
-                    </blockquote>
-                    <h3 class="text-xl font-bold pt-4 text-[#212529] dark:text-gray-100">Putting it into Practice</h3>
-                    <p>To implement minimalism, start by de-cluttering your interface. Question every button, line, and icon. Does it need to be there? Can its function be achieved in a simpler way? Opt for a flat design style, avoiding gradients and drop shadows that can add unnecessary visual complexity. Choose one or two readable fonts and stick to them. A well-chosen sans-serif like Inter or Lato can do wonders for readability and modern appeal.</p>
-                    <div class="w-full my-8">
-                        <div class="w-full overflow-hidden bg-gray-200 dark:bg-gray-700 aspect-[16/9] rounded-lg">
-                            <div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Clean workspace with a laptop, notebook, and a plant" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0R0R_G0j7s6TUKTwNfdsfs-ibHq1lwVYnA9p3cwQeUGG26NxAxEAQOJ--rQ9E_IZyLgyNz4vSk0-oBtMjWUF7eljzvM65uQbmEXre-6KJi6LQ46pVh77DhZWxZ1hPIEDHt1iRPLOrPgcJ5C8q3fhpDV2x09aFBN85vvO_HFxYh9GttkoYDn4U5mXcIEVhfwzmc1IQmLwsJYxhmEWVO4_KLVVku-PBeJ8AaAydUZuCOWdcA6hNft9BV0WiRahL7RigrJc2sQ0YSs8v");'></div>
-                        </div>
-                    </div>
-                    <p>Ultimately, minimalist design is about respecting the user's attention. By creating a clean, focused, and efficient interface, you not only improve usability but also build trust and communicate professionalism. It's an art form that balances aesthetics with function, proving that simplicity is the ultimate sophistication.</p>
-                -->
+                    
                 </div> 
             </article>
             <!-- Divider -->
@@ -68,8 +48,8 @@
                 <img class="size-20 sm:size-24 rounded-full object-cover" data-alt="Profile picture of Alex Doe, smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8JLtZJCyc4SRZgnRulEdpbdLL4BUg0B17qVOo6zIXDjyTHUqN6ahcg_7Rvd1QvlN4xTVIvmwcZdShbblhz-6CQdW7bgjlggmatAdECB4GxlUzjDfDbRCCa285Q1oL2a8zGQRPbA5HlwRKtj3dE2S4OwTGgfFRNpEBPKOxd6x8pXzGtuDo0MpMCRCJn_qbbSiN1HpW7yzhkbmQvxn2FMZAUP0SOBhKyB2kSusKEi5Jf5mkOZTQWA5dTMktKHjPjqmLlvdL5Ell-hjx" />
                 <div>
                     <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Written By</p>
-                    <h4 class="text-xl font-bold text-[#212529] dark:text-gray-100 mt-1">Alex Doe</h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2 leading-relaxed">Alex is a UI/UX designer and front-end developer with a passion for creating clean, intuitive, and beautiful user experiences. When not coding or designing, he enjoys photography and exploring the outdoors.</p>
+                    <h4 class="text-xl font-bold text-[#212529] dark:text-gray-100 mt-1"><?php the_author(); ?>p</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2 leading-relaxed"><?php the_author_meta('description'); ?></p>
                 </div>
             </div>
     <?php }
