@@ -60,23 +60,42 @@
     }
     wp_reset_postdata();
     ?>
+
+    <?php 
+    $project_query = new WP_Query([
+        'post_type' => 'project',
+        'posts_per_page' => 2,
+    ] 
+    );
+
+    if ($project_query->have_posts()) {
+    
+    ?>
     <section class="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div class="flex flex-col gap-8">
             <h2 class="text-3xl font-bold text-center tracking-[-0.02em]">Featured Projects</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <?php
+                    while ($project_query->have_posts()) {
+                        $project_query->the_post();
+
+                    ?>
                 <div class="flex flex-col gap-4">
-                    <div class="w-full aspect-[4/3] bg-cover bg-center rounded-lg" data-alt="A clean dashboard user interface design." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFmotvC11kJezCgDpPq7ewuGiFBBqNw-Slp1tWLGaNmYhkOozuILhzj031AJUltcHw8y-NVGlhKrUM9kEIqgsH1fk0obORFlDmTYGZY6xTPkwAHepESjZvCBHKpJmX6aEXB_l2eQPrZhlhXjrO58A_OPTZHoDRompd-oUYdlOi023norT3HYSI048z8vj4HHIBfy5UY2qrBYSKxYXXQV5FP2g1dtqlset_MtYbZY30-28dg_ROS4BKLtBBuM3JBRZ0gh25oXlu0u_Q");'></div>
-                    <h3 class="text-xl font-bold">Project Dashboard UI</h3>
-                    <p class="text-subtle-text-light dark:text-subtle-text-dark">A sleek and modern dashboard design for a project management application.</p>
+                    <!-- <div class="w-full aspect-[4/3] bg-cover bg-center rounded-lg" data-alt="A clean dashboard user interface design." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFmotvC11kJezCgDpPq7ewuGiFBBqNw-Slp1tWLGaNmYhkOozuILhzj031AJUltcHw8y-NVGlhKrUM9kEIqgsH1fk0obORFlDmTYGZY6xTPkwAHepESjZvCBHKpJmX6aEXB_l2eQPrZhlhXjrO58A_OPTZHoDRompd-oUYdlOi023norT3HYSI048z8vj4HHIBfy5UY2qrBYSKxYXXQV5FP2g1dtqlset_MtYbZY30-28dg_ROS4BKLtBBuM3JBRZ0gh25oXlu0u_Q");'></div>
+                    -->
+                    <div><?php the_post_thumbnail(); ?></div>
+                     <h3 class="text-xl font-bold"><?php the_title(); ?></h3> 
+                    <p class="text-subtle-text-light dark:text-subtle-text-dark"><?php the_excerpt(); ?></p>
                 </div>
-                <div class="flex flex-col gap-4">
-                    <div class="w-full aspect-[4/3] bg-cover bg-center rounded-lg" data-alt="A mobile application mockup for a fitness app." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAML4GlxYLkua2YCiWdF8_8YjcJ6t0JptXLhb-8b2cFJ-YtMa443poAlhpiVvDN8i6bmYU9f6QvAcP-aI3XTE96mmx7fljo7bsZCVZ4LNASOsw4YMTxrUnkXvrsJfx6VGQM6lLU28Emm49S9mbE1Nrtcd9cyF9-Mbs1Gi9M6iG9OyxW8ruR0n0h3SLDnalcVnsRBGScRocnWSuiuYGV3LzAXev9WKrUNgr3fV9K-av0DD03byMxQ7gw_cGYfTp3gzc6HVIsxoW4LmuD");'></div>
-                    <h3 class="text-xl font-bold">Mobile Fitness App</h3>
-                    <p class="text-subtle-text-light dark:text-subtle-text-dark">A user-friendly mobile app to track fitness goals and daily activity.</p>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
+    <?php
+    }
+    wp_reset_postdata();
+    ?>
+
     <section class="py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800">
         <div class="flex flex-col gap-8">
             <h2 class="text-3xl font-bold text-center tracking-[-0.02em]">Photo Gallery</h2>
