@@ -32,14 +32,14 @@
                 </div>
                 <!-- Images -->
                 <div class="w-full mb-8">
-                    
-                    <?php the_post_thumbnail('post-thumbnail', ['class' =>'w-full']); ?>
+
+                    <?php the_post_thumbnail('post-thumbnail', ['class' => 'w-full']); ?>
                 </div>
                 <!-- Blog Post Body -->
                 <div class=" learnwp-content prose prose-lg dark:prose-invert max-w-none text-[#212529] dark:text-gray-200 text-base leading-relaxed space-y-6">
                     <?php the_content(); ?>
-                    
-                </div> 
+
+                </div>
             </article>
             <!-- Divider -->
             <hr class="my-12 border-gray-200 dark:border-gray-700" />
