@@ -85,7 +85,7 @@
                             <!-- <div class="w-full aspect-[4/3] bg-cover bg-center rounded-lg" data-alt="A clean dashboard user interface design." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFmotvC11kJezCgDpPq7ewuGiFBBqNw-Slp1tWLGaNmYhkOozuILhzj031AJUltcHw8y-NVGlhKrUM9kEIqgsH1fk0obORFlDmTYGZY6xTPkwAHepESjZvCBHKpJmX6aEXB_l2eQPrZhlhXjrO58A_OPTZHoDRompd-oUYdlOi023norT3HYSI048z8vj4HHIBfy5UY2qrBYSKxYXXQV5FP2g1dtqlset_MtYbZY30-28dg_ROS4BKLtBBuM3JBRZ0gh25oXlu0u_Q");'></div>
                     -->
                             <div><?php the_post_thumbnail(); ?></div>
-                            <h3 class="text-xl font-bold"><?php the_title(); ?></h3>
+                            <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold"><?php the_title(); ?></h3></a>
                             <p class="text-subtle-text-light dark:text-subtle-text-dark"><?php the_excerpt(); ?></p>
                         </div>
                     <?php } ?>
