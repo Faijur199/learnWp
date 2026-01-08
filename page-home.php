@@ -11,9 +11,16 @@ get_header() ?>
                     <h2 class="text-base font-normal leading-normal text-subtle-text-light dark:text-subtle-text-dark"><?php echo esc_html(get_field('paragraph_section_')); ?></h2>
                 </div>
                 <div class="flex">
-                    <a href="<?php echo esc_url(get_field('button_section_url')); ?>" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                    <?php 
+                    $button_text = get_field('button_text');
+                    $button_url = get_field('utton_section_url');
+                    if($button_text && $button_url){
+                    
+                    ?>
+                    <a href="<?php echo esc_url(get_field('button_section_url')); ?>" target="_blank" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-blue-900 text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
                         <span class="truncate"><?php echo esc_html(get_field('button_text')); ?></span>
                     </a>
+                    <?php } ?>
                 </div>
             </div>
             <div class="w-full flex-1 bg-center bg-no-repeat aspect-square bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full" data-alt="Abstract vibrant geometric shapes on a light background" style='background-image: url("<?php echo esc_url(get_field('image_section')) ?>");'></div>
