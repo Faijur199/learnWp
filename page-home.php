@@ -13,7 +13,7 @@ get_header() ?>
                 <div class="flex">
                     <?php 
                     $button_text = get_field('button_text');
-                    $button_url = get_field('utton_section_url');
+                    $button_url = get_field('button_section_url');
                     if($button_text && $button_url){
                     
                     ?>
