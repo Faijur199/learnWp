@@ -54,7 +54,7 @@ function register_photo_post_type()
 
 add_action('init', 'register_photo_post_type');
 
-function learn_register_nav_menu(){
+function learnwp_register_nav_menu(){
     register_nav_menus(array(
         'main_menu' => __('Main Menu'),
     ));
